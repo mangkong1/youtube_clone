@@ -10,36 +10,34 @@ import SoundSearchIcon from "../../../assets/images/mic.png";
 
 const Header = () => {
   return (
-    <>
-      <S.HeaderContainer>
-        <S.HeaderLeft>
-          <S.MenuIcon src={ListIcon} />
-          <S.YoutubeLogo src={YoutubeLogo} />
-          <S.Country>KR</S.Country>
-        </S.HeaderLeft>
+    <S.HeaderContainer>
+      <S.HeaderLeft>
+        <S.MenuIcon src={ListIcon} />
+        <S.YoutubeLogo src={YoutubeLogo} />
+        <S.Country>KR</S.Country>
+      </S.HeaderLeft>
 
-        <S.HeaderCenter>
-          <S.SearchBar>
-            <S.SearchInfo>
-              <S.SearchWord>검색</S.SearchWord>
-              <S.KeyboardIcon src={KeyBoard} />
-            </S.SearchInfo>
-            <S.SearchBtn>
-              <S.SearchIcon src={SearchIcon} />
-            </S.SearchBtn>
-          </S.SearchBar>
-          <S.SoundSearchBtn>
-            <S.HeaderIcon src={SoundSearchIcon} />
-          </S.SoundSearchBtn>
-        </S.HeaderCenter>
+      <S.HeaderCenter>
+        <S.SearchBar>
+          <S.SearchInfo>
+            <S.SearchWord>검색</S.SearchWord>
+            <S.KeyboardIcon src={KeyBoard} />
+          </S.SearchInfo>
+          <S.SearchBtn>
+            <S.SearchIcon src={SearchIcon} />
+          </S.SearchBtn>
+        </S.SearchBar>
+        <S.SoundSearchBtn>
+          <S.HeaderIcon src={SoundSearchIcon} />
+        </S.SoundSearchBtn>
+      </S.HeaderCenter>
 
-        <S.HeaderRight>
-          <S.HeaderIcon src={Camcoder} />
-          <S.HeaderIcon src={Bell} />
-          <S.Profile src={Profile} />
-        </S.HeaderRight>
-      </S.HeaderContainer>
-    </>
+      <S.HeaderRight>
+        <S.HeaderIcon src={Camcoder} />
+        <S.HeaderIcon src={Bell} />
+        <S.Profile src={Profile} />
+      </S.HeaderRight>
+    </S.HeaderContainer>
   );
 };
 
