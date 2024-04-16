@@ -1,36 +1,43 @@
 import * as S from "../styles/HeaderStyle";
 import ListIcon from "../../../assets/images/list.png";
+import YoutubeLogo from "../../../assets/images/yt_logo.png";
+import KeyBoard from "../../../assets/images/keyboard.png";
+import SearchIcon from "../../../assets/images/search.png";
+import Profile from "../../../assets/images/profile.jpeg";
+import Camcoder from "../../../assets/images/camcoder.png";
+import Bell from "../../../assets/images/bell.png";
+import SoundSearchIcon from "../../../assets/images/mic.png";
 
 const Header = () => {
   return (
     <>
       <S.HeaderContainer>
         <S.HeaderLeft>
-          <S.HeaderMenuIcon src={ListIcon} alt="list" />
-          <img id="youtube_logo" src="/images/yt_logo.png" alt="main_logo" />
-          <p id="country">KR</p>
+          <S.MenuIcon src={ListIcon} />
+          <S.YoutubeLogo src={YoutubeLogo} />
+          <S.Country>KR</S.Country>
         </S.HeaderLeft>
 
-        <div id="header_center">
-          <div id="search_bar">
-            <div id="search_info">
-              <p id="search_word">검색</p>
-              <img id="keyboard_icon" src="/images/keyboard.png" />
-            </div>
-            <button id="search_btn">
-              <img className="header_icon" src="/images/search.png" />
-            </button>
-          </div>
-          <div id="sound_search_btn">
-            <img id="sound_search_icon" src="/images/mic.png" />
-          </div>
-        </div>
+        <S.HeaderCenter>
+          <S.SearchBar>
+            <S.SearchInfo>
+              <S.SearchWord>검색</S.SearchWord>
+              <S.KeyboardIcon src={KeyBoard} />
+            </S.SearchInfo>
+            <S.SearchBtn>
+              <S.SearchIcon src={SearchIcon} />
+            </S.SearchBtn>
+          </S.SearchBar>
+          <S.SoundSearchBtn>
+            <S.HeaderIcon src={SoundSearchIcon} />
+          </S.SoundSearchBtn>
+        </S.HeaderCenter>
 
-        <div id="header_right">
-          <img className="header_icon" src="/images/camcoder.png" />
-          <img className="header_icon" src="/images/bell.png" />
-          <img id="profile" src="/images/profile.jpeg" />
-        </div>
+        <S.HeaderRight>
+          <S.HeaderIcon src={Camcoder} />
+          <S.HeaderIcon src={Bell} />
+          <S.Profile src={Profile} />
+        </S.HeaderRight>
       </S.HeaderContainer>
     </>
   );
