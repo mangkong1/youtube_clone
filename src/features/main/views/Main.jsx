@@ -4,13 +4,11 @@ import { MainContainer } from "../styles/MainStyle";
 
 const Main = () => {
   return (
-    <>
-      <MainContainer>
-        {MainData.map((elem) => (
-          <MainElem key={elem.id} data={elem} />
-        ))}
-      </MainContainer>
-    </>
+    <MainContainer>
+      {MainData.map((elem) => (
+        <MainElem key={elem.id} data={elem} />
+      ))}
+    </MainContainer>
   );
 };
 

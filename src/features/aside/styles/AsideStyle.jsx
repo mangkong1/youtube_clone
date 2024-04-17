@@ -9,6 +9,10 @@ export const AsideContainer = styled.aside`
   position: fixed;
   /* css변수 선언으로 header-height값과 동일하게 맞춰줘야함 */
   top: 56px;
+
+  a {
+    text-decoration: none;
+  }
 `;
 
 export const AsideInfo = styled.div`
@@ -16,6 +20,11 @@ export const AsideInfo = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 16px 22px;
+
+  &:hover {
+    background-color: #d3d3d3;
+    border-radius: 10px;
+  }
 `;
 
 export const AsideIcon = styled.img`
