@@ -1,12 +1,12 @@
 import * as S from "../styles/HeaderStyle";
-import ListIcon from "../assets/images/list.png";
-import YoutubeLogo from "../assets/images/yt_logo.png";
-import KeyBoard from "../assets/images/keyboard.png";
-import SearchIcon from "../assets/images/search.png";
-import Profile from "../assets/images/profile.jpeg";
-import Camcoder from "../assets/images/camcoder.png";
-import Bell from "../assets/images/bell.png";
-import SoundSearchIcon from "../assets/images/mic.png";
+import ListIcon from "../../../assets/images/list.png";
+import YoutubeLogo from "../../../assets/images/yt_logo.png";
+import KeyBoard from "../../../assets/images/keyboard.png";
+import SearchIcon from "../../../assets/images/search.png";
+import Profile from "../../../assets/images/profile.jpeg";
+import Camcoder from "../../../assets/images/camcoder.png";
+import Bell from "../../../assets/images/bell.png";
+import SoundSearchIcon from "../../../assets/images/mic.png";
 
 const Header = () => {
   return (
