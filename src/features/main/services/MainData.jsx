@@ -14,7 +14,7 @@ const MainData = [
     channelName: "강아지귀여워1111",
     views: "조회수 5만회",
     uploadDate: "2주 전",
-    subscribeState: false,
+    subscribeState: true,
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const MainData = [
     channelName: "강아지귀여워2222",
     views: "조회수 6만회",
     uploadDate: "3주 전",
-    subscribeState: true,
+    subscribeState: false,
   },
   {
     id: 3,

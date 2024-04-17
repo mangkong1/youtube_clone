@@ -7,6 +7,7 @@ const ShortsData = [
     shortsImgSrc: ShortsImg1,
     channelImgSrc: Thumbnail1,
     channelName: "강아지귀여워1111",
+    subscribeState: false,
   },
 ];
 
