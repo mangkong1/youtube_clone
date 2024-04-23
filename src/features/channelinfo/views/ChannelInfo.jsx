@@ -1,4 +1,4 @@
-import * as S from "../styles/ChannelStyle";
+import * as S from "../../../pages/channel/styles/ChannelStyle";
 
 const ChannelInfo = (props) => {
   const { channelMainImgSrc, channelImgSrc, channelName } = props.data;

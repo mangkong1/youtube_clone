@@ -1,8 +1,13 @@
 import * as S from "../styles/HomeStyle";
 import DotIcon from "../../../assets/images/dot.png";
+import useWeeksAgo from "../../../hooks/MainUploadDateHook";
+import useFormatViews from "../../../hooks/FormatView";
 
 const HomeElem = (props) => {
   const { thumbnailSrc, title, channelName, views, uploadDate } = props.data;
+
+  const weeksAgo = useWeeksAgo(uploadDate);
+  const formattedViews = useFormatViews(views);
 
   return (
     <>
@@ -12,9 +17,9 @@ const HomeElem = (props) => {
           <S.VideoTitle>{title}</S.VideoTitle>
           <S.ChannelName>{channelName}</S.ChannelName>
           <S.UploadInfo>
-            <S.Views>{views}</S.Views>
+            <S.Views>{formattedViews}회</S.Views>
             <S.DotIcon src={DotIcon} />
-            <S.UploadDate>{uploadDate}</S.UploadDate>
+            <S.UploadDate>{`${weeksAgo}주 전`}</S.UploadDate>
           </S.UploadInfo>
         </S.VideoInfo>
       </S.VideoInfoContainer>

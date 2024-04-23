@@ -1,13 +1,13 @@
 import { MainChannelContainer, ChannelContainer } from "../styles/ChannelStyle";
 import { useParams } from "react-router-dom";
-import ChannelInfo from "./ChannelInfo";
-import ChannelTab from "./ChannelTab";
+import ChannelInfo from "../../../features/channelinfo/views/ChannelInfo";
+import ChannelTab from "../../../features/channeltab/views/ChannelTab";
 import SubscribeBtn from "../../../components/SubscribeBtn";
-import ChannelData from "../services/ChannelData";
+import Data from "../../../data";
 
 const ChannelPage = () => {
   const { channelName } = useParams();
-  const filteredData = ChannelData.find((elem) => elem.channelName === channelName);
+  const filteredData = Data.find((elem) => elem.channelName === channelName);
 
   return (
     <MainChannelContainer>

@@ -1,8 +1,8 @@
-import Home from "../views/Home";
-import Video from "../views/Video";
-import Shorts from "../views/Shorts";
-import Live from "../views/Live";
-import Podcast from "../views/Podcast";
+import Home from "../../home/views/Home";
+import Video from "../../../pages/channel/views/Video";
+import Shorts from "../../../pages/channel/views/Shorts";
+import Live from "../../../pages/channel/views/Live";
+import Podcast from "../../../pages/channel/views/Podcast";
 
 const tabs = [
   { name: "홈", path: "home", component: <Home /> },

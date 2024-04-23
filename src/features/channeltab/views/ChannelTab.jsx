@@ -1,7 +1,7 @@
-import { ChannelTabContainer, ChannelTabBtn } from "../styles/ChannelStyle";
-import { useChangeTab } from "../hooks/ChannelHooks";
+import { ChannelTabContainer, ChannelTabBtn } from "../../../pages/channel/styles/ChannelStyle";
+import { useChangeTab } from "../../../pages/channel/hooks/ChannelHooks";
 import tabs from "../services/ChannelTabData";
-import ChannelRouter from "./ChannelRouter";
+import ChannelRouter from "../../../pages/channel/views/ChannelRouter";
 
 const ChannelTab = () => {
   const { activeTab, handleTabNavigation } = useChangeTab(tabs[0].path);

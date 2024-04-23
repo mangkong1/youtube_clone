@@ -1,11 +1,11 @@
 import MainElem from "./MainElem";
-import MainData from "../services/MainData";
+import Data from "../../../data";
 import { MainContainer } from "../styles/MainStyle";
 
 const Main = () => {
   return (
     <MainContainer>
-      {MainData.map((elem) => (
+      {Data.map((elem) => (
         <MainElem key={elem.id} data={elem} />
       ))}
     </MainContainer>
