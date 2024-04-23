@@ -1,63 +1,45 @@
-import essential_channel_main_img from "../assets/images/essential_channel_main_img.jpeg";
-import essential_channel_profile_img from "../assets/images/essential_channel_profile_img.jpeg";
-import essential_thumb_img1 from "../assets/images/essential_thumb_img1.jpeg";
-import essential_thumb_img2 from "../assets/images/essential_thumb_img2.jpeg";
-import essential_thumb_img3 from "../assets/images/essential_thumb_img3.jpeg";
-import chungju_channel_profile_img from "../assets/images/chungju_channel_profile_img.jpeg";
-import chungju_channel_main_img from "../assets/images/chungju_channel_main_img.png";
-import chungju_thumb_img1 from "../assets/images/chungju_thumb_img1.webp";
-import chungju_thumb_img2 from "../assets/images/chungju_thumb_img2.jpg";
-import chungju_thumb_img3 from "../assets/images/chungju_thumb_img3.jpg";
-import codingapple_channel_main_img from "../assets/images/codingapple_channel_main_img.png";
-import codingapple_channel_profile_img from "../assets/images/codingapple_channel_profile_img.jpeg";
-import codingapple_thumb_img1 from "../assets/images/codingapple_thumb_img1.webp";
-import codingapple_thumb_img2 from "../assets/images/codingapple_thumb_img2.jpg";
-import codingapple_thumb_img3 from "../assets/images/codingapple_thumb_img3.jpg";
-import kiatigers_channel_main_img from "../assets/images/kiatigers_channel_main_img.jpeg";
-import kiatigers_channel_profile_img from "../assets/images/kiatigers_channel_profile_img.jpeg";
-import kiatigers_thumb_img1 from "../assets/images/kiatigers_thumb_img1.jpg";
-import kiatigers_thumb_img2 from "../assets/images/kiatigers_thumb_img2.jpg";
-import kiatigers_thumb_img3 from "../assets/images/kiatigers_thumb_img3.jpg";
+// require은 간결하고 직관적이지만 webpack이나 Parcel 같은 번들러가 빌드할 때 모든 이미지를 포함하므로 속도 느리다
+// import를 사용하면 필요한 이미지만 포함할 수 있어 빌드 속도가 빨라진다. 하지만 비동기 개념이 들어가므로 나중에 사용예정
 
 const MainData = [
   {
     id: 1,
-    channelMainImgSrc: essential_channel_main_img,
-    channelImgSrc: essential_channel_profile_img,
-    thumbnailSrc: essential_thumb_img1,
+    channelMainImgSrc: require("../assets/images/essential_channel_main_img.jpeg"),
+    channelImgSrc: require("../assets/images/essential_channel_profile_img.jpeg"),
+    thumbnailSrc: require("../assets/images/essential_thumb_img1.jpeg"),
     title: "게시물 제목입니다1",
     channelName: "essential",
     views: "조회수 5만회",
     uploadDate: "2주 전",
-    subscribeState: true,
+    subscribeState: false,
   },
   {
     id: 2,
-    channelMainImgSrc: essential_channel_main_img,
-    channelImgSrc: essential_channel_profile_img,
-    thumbnailSrc: essential_thumb_img2,
+    channelMainImgSrc: require("../assets/images/essential_channel_main_img.jpeg"),
+    channelImgSrc: require("../assets/images/essential_channel_profile_img.jpeg"),
+    thumbnailSrc: require("../assets/images/essential_thumb_img2.jpeg"),
     title: "게시물 제목입니다2",
     channelName: "essential",
     views: "조회수 5만회",
     uploadDate: "2주 전",
-    subscribeState: true,
+    subscribeState: false,
   },
   {
     id: 3,
-    channelMainImgSrc: essential_channel_main_img,
-    channelImgSrc: essential_channel_profile_img,
-    thumbnailSrc: essential_thumb_img3,
+    channelMainImgSrc: require("../assets/images/essential_channel_main_img.jpeg"),
+    channelImgSrc: require("../assets/images/essential_channel_profile_img.jpeg"),
+    thumbnailSrc: require("../assets/images/essential_thumb_img3.jpeg"),
     title: "게시물 제목입니다3",
-    channelName: "essentail",
+    channelName: "essential",
     views: "조회수 5만회",
     uploadDate: "2주 전",
-    subscribeState: true,
+    subscribeState: false,
   },
   {
     id: 4,
-    channelMainImgSrc: chungju_channel_main_img,
-    channelImgSrc: chungju_channel_profile_img,
-    thumbnailSrc: chungju_thumb_img1,
+    channelMainImgSrc: require("../assets/images/chungju_channel_main_img.png"),
+    channelImgSrc: require("../assets/images/chungju_channel_profile_img.jpeg"),
+    thumbnailSrc: require("../assets/images/chungju_thumb_img1.webp"),
     title: "게시물 제목입니다1",
     channelName: "충주시",
     views: "조회수 5만회",
@@ -66,9 +48,9 @@ const MainData = [
   },
   {
     id: 5,
-    channelMainImgSrc: chungju_channel_main_img,
-    channelImgSrc: chungju_channel_profile_img,
-    thumbnailSrc: chungju_thumb_img2,
+    channelMainImgSrc: require("../assets/images/chungju_channel_main_img.png"),
+    channelImgSrc: require("../assets/images/chungju_channel_profile_img.jpeg"),
+    thumbnailSrc: require("../assets/images/chungju_thumb_img2.jpg"),
     title: "게시물 제목입니다2",
     channelName: "충주시",
     views: "조회수 5만회",
@@ -77,9 +59,9 @@ const MainData = [
   },
   {
     id: 6,
-    channelMainImgSrc: chungju_channel_main_img,
-    channelImgSrc: chungju_channel_profile_img,
-    thumbnailSrc: chungju_thumb_img3,
+    channelMainImgSrc: require("../assets/images/chungju_channel_main_img.png"),
+    channelImgSrc: require("../assets/images/chungju_channel_profile_img.jpeg"),
+    thumbnailSrc: require("../assets/images/chungju_thumb_img3.jpg"),
     title: "게시물 제목입니다3",
     channelName: "충주시",
     views: "조회수 5만회",
@@ -88,9 +70,9 @@ const MainData = [
   },
   {
     id: 7,
-    channelMainImgSrc: codingapple_channel_main_img,
-    channelImgSrc: codingapple_channel_profile_img,
-    thumbnailSrc: codingapple_thumb_img1,
+    channelMainImgSrc: require("../assets/images/codingapple_channel_main_img.png"),
+    channelImgSrc: require("../assets/images/codingapple_channel_profile_img.jpeg"),
+    thumbnailSrc: require("../assets/images/codingapple_thumb_img1.webp"),
     title: "게시물 제목입니다1",
     channelName: "코딩애플",
     views: "조회수 5만회",
@@ -99,9 +81,9 @@ const MainData = [
   },
   {
     id: 8,
-    channelMainImgSrc: codingapple_channel_main_img,
-    channelImgSrc: codingapple_channel_profile_img,
-    thumbnailSrc: codingapple_thumb_img2,
+    channelMainImgSrc: require("../assets/images/codingapple_channel_main_img.png"),
+    channelImgSrc: require("../assets/images/codingapple_channel_profile_img.jpeg"),
+    thumbnailSrc: require("../assets/images/codingapple_thumb_img2.jpg"),
     title: "게시물 제목입니다2",
     channelName: "코딩애플",
     views: "조회수 5만회",
@@ -110,9 +92,9 @@ const MainData = [
   },
   {
     id: 9,
-    channelMainImgSrc: codingapple_channel_main_img,
-    channelImgSrc: codingapple_channel_profile_img,
-    thumbnailSrc: codingapple_thumb_img3,
+    channelMainImgSrc: require("../assets/images/codingapple_channel_main_img.png"),
+    channelImgSrc: require("../assets/images/codingapple_channel_profile_img.jpeg"),
+    thumbnailSrc: require("../assets/images/codingapple_thumb_img3.jpg"),
     title: "게시물 제목입니다3",
     channelName: "코딩애플",
     views: "조회수 5만회",
@@ -121,9 +103,9 @@ const MainData = [
   },
   {
     id: 10,
-    channelMainImgSrc: kiatigers_channel_main_img,
-    channelImgSrc: kiatigers_channel_profile_img,
-    thumbnailSrc: kiatigers_thumb_img1,
+    channelMainImgSrc: require("../assets/images/kiatigers_channel_main_img.jpeg"),
+    channelImgSrc: require("../assets/images/kiatigers_channel_profile_img.jpeg"),
+    thumbnailSrc: require("../assets/images/kiatigers_thumb_img1.jpg"),
     title: "게시물 제목입니다1",
     channelName: "기아타이거즈",
     views: "조회수 5만회",
@@ -132,9 +114,9 @@ const MainData = [
   },
   {
     id: 11,
-    channelMainImgSrc: kiatigers_channel_main_img,
-    channelImgSrc: kiatigers_channel_profile_img,
-    thumbnailSrc: kiatigers_thumb_img2,
+    channelMainImgSrc: require("../assets/images/kiatigers_channel_main_img.jpeg"),
+    channelImgSrc: require("../assets/images/kiatigers_channel_profile_img.jpeg"),
+    thumbnailSrc: require("../assets/images/kiatigers_thumb_img2.jpg"),
     title: "게시물 제목입니다2",
     channelName: "기아타이거즈",
     views: "조회수 5만회",
@@ -143,9 +125,9 @@ const MainData = [
   },
   {
     id: 12,
-    channelMainImgSrc: kiatigers_channel_main_img,
-    channelImgSrc: kiatigers_channel_profile_img,
-    thumbnailSrc: kiatigers_thumb_img3,
+    channelMainImgSrc: require("../assets/images/kiatigers_channel_main_img.jpeg"),
+    channelImgSrc: require("../assets/images/kiatigers_channel_profile_img.jpeg"),
+    thumbnailSrc: require("../assets/images/kiatigers_thumb_img3.jpg"),
     title: "게시물 제목입니다3",
     channelName: "기아타이거즈",
     views: "조회수 5만회",

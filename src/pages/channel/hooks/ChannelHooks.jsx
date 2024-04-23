@@ -1,11 +1,15 @@
 import { useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 
-export const useChangeTab = () => {
-  const [activeTab, setActiveTab] = useState("홈");
+export const useChangeTab = (props) => {
+  const [activeTab, setActiveTab] = useState(props);
+  const { channelName } = useParams();
+  const navigate = useNavigate();
 
-  const handleTabClick = (e) => {
-    setActiveTab(e);
+  const handleTabNavigation = (path) => {
+    setActiveTab(path);
+    navigate(`/${channelName}/${path}`);
   };
 
-  return { activeTab, handleTabClick };
+  return { activeTab, handleTabNavigation };
 };

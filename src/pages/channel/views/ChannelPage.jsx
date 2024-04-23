@@ -17,8 +17,8 @@ const ChannelPage = () => {
             <SubscribeBtn data={filteredData} />
           </ChannelInfo>
         )}
+        <ChannelTab />
       </ChannelContainer>
-      <ChannelTab />
     </MainChannelContainer>
   );
 };

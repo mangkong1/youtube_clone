@@ -14,7 +14,7 @@ export const ChannelContainer = styled.section`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 10000px;
+  max-width: 1000px;
   margin: 0 60px 0 60px;
 `;
 
@@ -48,6 +48,7 @@ export const ChannelProfileInfo = styled.div`
 
 export const ChannelProfileName = styled.h1`
   font-size: 36px;
+  font-weight: 700;
   margin-bottom: 10px;
 `;
 
