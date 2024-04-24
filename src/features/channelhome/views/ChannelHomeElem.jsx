@@ -3,7 +3,7 @@ import DotIcon from "../../../assets/images/dot.png";
 import useWeeksAgo from "../../../hooks/MainUploadDateHook";
 import useFormatViews from "../../../hooks/FormatView";
 
-const HomeElem = (props) => {
+const ChannelHomeElem = (props) => {
   const { thumbnailSrc, title, channelName, views, uploadDate } = props.data;
 
   const weeksAgo = useWeeksAgo(uploadDate);
@@ -27,4 +27,4 @@ const HomeElem = (props) => {
   );
 };
 
-export default HomeElem;
+export default ChannelHomeElem;

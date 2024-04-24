@@ -9,6 +9,7 @@ export const AsideContainer = styled.aside`
   position: fixed;
   /* css변수 선언으로 header-height값과 동일하게 맞춰줘야함 */
   top: 56px;
+  z-index: 1;
 
   a {
     text-decoration: none;

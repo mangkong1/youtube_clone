@@ -5,7 +5,7 @@ export const SubscribeBtnContainer = styled.button`
   color: ${(props) => (props.$active ? "white" : "black")};
   width: 56px;
   height: 36px;
-  border: 1px solid black;
+  border: ${(props) => (props.$active ? "1px solid white" : "1px solid black")};
   border-radius: 18px;
   cursor: pointer;
   font-size: ${(props) => (props.$active ? "10px" : "initial")};

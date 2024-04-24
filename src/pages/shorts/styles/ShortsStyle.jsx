@@ -11,59 +11,39 @@ export const MainShortsContainer = styled.main`
 
 export const ShortsContainer = styled.section`
   display: flex;
+  justify-content: center;
   margin-top: 50px;
 `;
 
-export const ShortsVideoContainer = styled.article``;
+export const ShortsVideoContainer = styled.article`
+  background-color: black;
+  border-radius: 10px;
+  width: 450px;
+`;
 
 export const ShortsVideoImg = styled.img`
   width: 100%;
-  max-width: 450px;
   border-radius: 10px;
-  object-fit: cover;
+  object-fit: contain;
   aspect-ratio: 9/16;
 `;
 
 export const ShortsVideoInfo = styled.div`
   display: flex;
   align-items: center;
-  margin-top: 10px;
+  margin: 10px 0 10px 0;
 `;
 
 export const ShortsProfileImg = styled.img`
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  margin: 0 6px 0 12px;
+  margin: 0 12px 0 24px;
   object-fit: cover;
 `;
 
 export const ShortsProfileName = styled.p`
   font-size: 14px;
-  margin-right: 6px;
-`;
-
-export const ShortsButtonContainer = styled.article`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin-left: 12px;
-`;
-
-export const ShortsButton = styled.button`
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  margin-top: 16px;
-  font-size: 12px;
-
-  &.active {
-    background-color: black;
-    color: white;
-  }
-`;
-
-export const ShortsLikeNum = styled.p`
-  margin-top: 5px;
-  text-align: center;
+  margin-right: 12px;
+  color: white;
 `;

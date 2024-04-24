@@ -1,5 +1,5 @@
 import { ChannelTabContainer, ChannelTabBtn } from "../../../pages/channel/styles/ChannelStyle";
-import { useChangeTab } from "../../../pages/channel/hooks/ChannelHooks";
+import useChangeTab from "../../../pages/channel/hooks/ChangeTabHook";
 import tabs from "../services/ChannelTabData";
 import ChannelRouter from "../../../pages/channel/views/ChannelRouter";
 
@@ -9,9 +9,9 @@ const ChannelTab = () => {
   return (
     <>
       <ChannelTabContainer>
-        {tabs.map((tab) => (
-          <ChannelTabBtn key={tab.path} $active={activeTab === tab.path} onClick={() => handleTabNavigation(tab.path)}>
-            {tab.name}
+        {tabs.map((elem) => (
+          <ChannelTabBtn key={elem.path} $active={activeTab === elem.path} onClick={() => handleTabNavigation(elem.path)}>
+            {elem.name}
           </ChannelTabBtn>
         ))}
       </ChannelTabContainer>

@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "../../../features/home/views/Home";
+import ChannelHome from "../../../features/channelhome/views/ChannelHome";
 import tabs from "../../../features/channeltab/services/ChannelTabData";
 
 const ChannelRouter = () => (
   <Routes>
-    <Route path="/" element={<Home />} />
+    <Route path="/" element={<ChannelHome />} />
     {tabs.map((tab) => (
       <Route key={tab.path} path={tab.path} element={tab.component} />
     ))}

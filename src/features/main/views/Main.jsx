@@ -3,9 +3,11 @@ import Data from "../../../data";
 import { MainContainer } from "../styles/MainStyle";
 
 const Main = () => {
+  const sortedData = [...Data].sort((a, b) => new Date(b.uploadDate) - new Date(a.uploadDate)); // date 기준으로 오름차순 정렬
+
   return (
     <MainContainer>
-      {Data.map((elem) => (
+      {sortedData.map((elem) => (
         <MainElem key={elem.id} data={elem} />
       ))}
     </MainContainer>

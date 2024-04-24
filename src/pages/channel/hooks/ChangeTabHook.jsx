@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
-export const useChangeTab = (props) => {
+const useChangeTab = (props) => {
   const [activeTab, setActiveTab] = useState(props);
   const { channelName } = useParams();
   const navigate = useNavigate();
@@ -13,3 +13,5 @@ export const useChangeTab = (props) => {
 
   return { activeTab, handleTabNavigation };
 };
+
+export default useChangeTab;

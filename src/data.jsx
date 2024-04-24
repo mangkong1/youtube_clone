@@ -11,7 +11,7 @@ const Data = [
     channelName: "essential",
     views: 50345,
     uploadDate: "2024-04-01",
-    subscribeState: true,
+    subscribeState: false,
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const Data = [
     channelName: "essential",
     views: 46034,
     uploadDate: "2024-04-08",
-    subscribeState: true,
+    subscribeState: false,
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const Data = [
     channelName: "essential",
     views: 35078,
     uploadDate: "2024-04-15",
-    subscribeState: true,
+    subscribeState: false,
   },
   {
     id: 4,

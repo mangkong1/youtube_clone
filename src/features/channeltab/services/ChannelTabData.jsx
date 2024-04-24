@@ -1,4 +1,4 @@
-import Home from "../../home/views/Home";
+import Home from "../../channelhome/views/ChannelHome";
 import Video from "../../../pages/channel/views/Video";
 import Shorts from "../../../pages/channel/views/Shorts";
 import Live from "../../../pages/channel/views/Live";
