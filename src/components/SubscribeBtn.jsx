@@ -1,5 +1,5 @@
 import { useSetSubscribeState } from "../hooks/SetSubscribeState";
-import { SubscribeBtnContainer } from "./styles/ComponentStyle";
+import { SubscribeBtnContainer } from "./styles/SubscribeBtnStyle";
 
 const SubscribeBtn = ({ data }) => {
   const { isSubscribe, handleSubscribe } = useSetSubscribeState(data);

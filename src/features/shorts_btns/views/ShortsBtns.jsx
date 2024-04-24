@@ -4,25 +4,10 @@ import hateIcon from "../assets/images/hate_icon.png";
 import commentIcon from "../assets/images/comment_icon.png";
 import shareIcon from "../assets/images/share_icon.png";
 import moreIcon from "../assets/images/more_icon.png";
-import { useState } from "react";
+import useChangeBtnState from "../hooks/ShortsBtnsHooks";
 
 const ShortsBtns = () => {
-  const [isLike, setisLike] = useState(false);
-  const [isHate, setisHate] = useState(false);
-  const [likeCount, setLikeCount] = useState(0);
-
-  const handleLikeActive = () => {
-    setisLike(!isLike);
-    if (!isLike) {
-      setLikeCount(likeCount + 1);
-    } else {
-      setLikeCount(likeCount - 1);
-    }
-  };
-
-  const handleHateActive = () => {
-    setisHate(!isHate);
-  };
+  const { isLike, isHate, likeCount, handleLikeActive, handleHateActive } = useChangeBtnState();
 
   return (
     <S.ShortsBtnContainer>

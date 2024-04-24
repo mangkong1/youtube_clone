@@ -13,6 +13,7 @@ export const ShortsContainer = styled.section`
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  width: 100%;
 `;
 
 export const ShortsVideoContainer = styled.article`
