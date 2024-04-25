@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import Data from "../../../data";
+import Data from "../../../data.tsx";
 import { HomeContainer, HomeIndex } from "../styles/HomeStyle";
 import ChannelHomeElem from "./ChannelHomeElem";
 

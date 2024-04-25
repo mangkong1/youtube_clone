@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import ChannelInfo from "../../../features/channel_info/views/ChannelInfo";
 import ChannelTab from "../../../features/channel_tab/views/ChannelTab";
 import SubscribeBtn from "../../../components/SubscribeBtn";
-import Data from "../../../data";
+import Data from "../../../data.tsx";
 
 const ChannelPage = () => {
   const { channelName } = useParams();

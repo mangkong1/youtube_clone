@@ -1,6 +1,6 @@
 import ShortsElem from "./ShortsElem";
 import { MainShortsContainer } from "../styles/ShortsStyle";
-import Data from "../../../data";
+import Data from "../../../data.tsx";
 import SubscribeBtn from "../../../components/SubscribeBtn";
 
 const ShortsPage = () => {
