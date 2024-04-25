@@ -1,5 +1,5 @@
 import React from "react";
-import * as S from "../styles/MainStyle";
+import * as S from "../styles/MainStyle.tsx";
 import { Link } from "react-router-dom";
 import DotIcon from "../../../assets/images/dot.png";
 import useWeeksAgo from "../../../hooks/MainUploadDateHook";
