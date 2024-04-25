@@ -1,3 +1,4 @@
+import React from "react";
 import * as S from "../styles/AsideStyle";
 import AsideData from "../services/AsideData";
 import AsideElem from "./AsideElem";
