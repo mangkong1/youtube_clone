@@ -1,3 +1,4 @@
+import React from "react";
 import { ChannelTabContainer, ChannelTabBtn } from "../../../pages/channel/styles/ChannelStyle";
 import useChangeTab from "../../../pages/channel/hooks/ChangeTabHook";
 import tabs from "../services/ChannelTabData";
@@ -10,7 +11,11 @@ const ChannelTab = () => {
     <>
       <ChannelTabContainer>
         {tabs.map((elem) => (
-          <ChannelTabBtn key={elem.path} $active={activeTab === elem.path} onClick={() => handleTabNavigation(elem.path)}>
+          <ChannelTabBtn
+            key={elem.path}
+            $active={activeTab === elem.path} // Add the $active prop here
+            onClick={() => handleTabNavigation(elem.path)}
+          >
             {elem.name}
           </ChannelTabBtn>
         ))}

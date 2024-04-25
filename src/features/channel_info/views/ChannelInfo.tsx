@@ -1,3 +1,4 @@
+import React from "react";
 import * as S from "../../../pages/channel/styles/ChannelStyle";
 
 const ChannelInfo = (props) => {
