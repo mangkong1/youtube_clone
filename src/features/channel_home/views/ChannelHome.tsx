@@ -1,7 +1,8 @@
+import React from "react";
 import { useParams } from "react-router-dom";
 import Data from "../../../data.tsx";
-import { HomeContainer, HomeIndex } from "../styles/HomeStyle";
-import ChannelHomeElem from "./ChannelHomeElem";
+import { HomeContainer, HomeIndex } from "../styles/HomeStyle.tsx";
+import ChannelHomeElem from "./ChannelHomeElem.jsx";
 
 const ChannelHome = () => {
   const { channelName } = useParams(); // URL에서 channelName 부분을 추출

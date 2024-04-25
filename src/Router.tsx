@@ -1,3 +1,4 @@
+import React from "react";
 import Main from "./features/main/views/Main";
 import ShortsPage from "./pages/shorts/views/ShortsPage";
 import ChannelPage from "./pages/channel/views/ChannelPage";

@@ -1,8 +1,9 @@
-import { MainChannelContainer, ChannelContainer } from "../styles/ChannelStyle";
+import React from "react";
+import { MainChannelContainer, ChannelContainer } from "../styles/ChannelStyle.tsx";
 import { useParams } from "react-router-dom";
-import ChannelInfo from "../../../features/channel_info/views/ChannelInfo";
-import ChannelTab from "../../../features/channel_tab/views/ChannelTab";
-import SubscribeBtn from "../../../components/SubscribeBtn";
+import ChannelInfo from "../../../features/channel_info/views/ChannelInfo.tsx";
+import ChannelTab from "../../../features/channel_tab/views/ChannelTab.tsx";
+import SubscribeBtn from "../../../components/SubscribeBtn.tsx";
 import Data from "../../../data.tsx";
 
 const ChannelPage = () => {
