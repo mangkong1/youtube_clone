@@ -1,3 +1,4 @@
+import React from "react";
 import * as S from "../styles/HomeStyle";
 import DotIcon from "../../../assets/images/dot.png";
 import useWeeksAgo from "../../../hooks/MainUploadDateHook";

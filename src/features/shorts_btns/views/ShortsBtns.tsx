@@ -1,3 +1,4 @@
+import React from "react";
 import * as S from "../styles/ShortsBtnsStyle";
 import likeIcon from "../assets/images/like_icon.png";
 import hateIcon from "../assets/images/hate_icon.png";
